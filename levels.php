@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=El+Messiri:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/levels_style.css" />
     <title>رحلة عبر التاريخ</title>
   </head>
   <body>
