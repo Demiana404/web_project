@@ -1,0 +1,234 @@
+/* ================= GLOBAL STYLES ================= */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "El Messiri", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Background Image Handling */
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures BG covers screen, character stays positioned */
+  object-position: center center;
+  z-index: -1;
+  opacity: 0.75;
+}
+
+/* ================= NAVBAR STYLES (UNCHANGED) ================= */
+.custom-navbar {
+  padding: 5px 10px;
+  direction: rtl;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100; /* Ensure nav is on top */
+}
+
+.navbar {
+  direction: ltr;
+}
+
+.logo {
+  font-family: Aref Ruqaa;
+  font-size: 30px;
+  color: #d4af37 !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 15px;
+  margin-left: 18px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d4af37 !important;
+}
+
+/* ================= MAIN GAME LAYOUT (NEW) ================= */
+/* This container fills the space between header and footer */
+.main-game-container {
+  flex: 1; /* Takes remaining vertical space */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Spread items horizontally */
+  padding: 80px 2% 20px; /* Top padding clears navbar */
+  width: 100%;
+  box-sizing: border-box;
+  gap: 20px;
+}
+/* --- CENTER: PUZZLE BOX --- */
+.puzzle-box-container {
+  flex: 2; /* Takes up twice as much space as the sides */
+  background: rgba(45, 30, 20, 0.92);
+  font-family: "El Messiri", sans-serif;
+  padding: 30px 40px;
+  margin-left: 20px;
+  border-radius: 15px;
+  border: 2px solid rgba(212, 175, 55, 0.4); /* Subtle gold border */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); /* Deep shadow for pop */
+  color: #f1e3c8; /* Light cream text */
+  text-align: center;
+  max-width: 750px;
+  direction: rtl;
+  backdrop-filter: blur(5px);
+}
+
+.puzzle-title {
+  font-family: "Aref Ruqaa", serif;
+  color: #d4af37; /* Gold title */
+  margin-bottom: 25px;
+}
+
+/* Hieroglyphic Grid Styling */
+.letters-grid {
+  display: flex;
+  flex-direction: row-reverse; /* Columns ordered right-to-left visually */
+  justify-content: space-between;
+  text-align: right;
+  gap: 15px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.letters-grid .col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Noto Sans Egyptian Hieroglyphs", "EL Messiri", sans-serif;
+}
+
+/* Styling individual letter rows */
+.letters-grid div {
+  display: flex;
+  justify-content: flex-end; /* Aligns Arabic and Symbol to the right */
+  align-items: center;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Input and Button Area */
+.input-area {
+  margin-right: 50px;
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.game-input {
+  width: 300px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #d4af37;
+  background: rgba(255, 248, 235, 0.95); /* Cream background */
+  font-family: "El Messiri", sans-serif;
+  font-size: 18px;
+  text-align: right;
+  outline: none;
+  color: #333;
+}
+
+.game-input::placeholder {
+  color: #887;
+}
+.input-area p {
+  font-size: 40px;
+  color: rgb(241, 214, 55);
+  font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
+  font-weight: 800;
+}
+.input-area span {
+  color: lightgray;
+}
+.game-submit-btn a{
+  text-decoration: none;
+  color: black;
+}
+.game-submit-btn {
+  padding: 12px 35px;
+  background: linear-gradient(45deg, #caa23a, #e6c86e); /* Gold gradient */
+  color: #2a1a10;
+  border: none;
+  border-radius: 8px;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+.game-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5);
+  background: linear-gradient(45deg, #d4af37, #fddb85);
+}
+
+/* --- RIGHT SIDE: SPACER --- */
+/* This empty container ensures the center box doesn't cover the character on the right */
+.right-spacer {
+  flex: 1;
+  max-width: 30%;
+}
+/* Temporary border to see where it is during dev */
+/* border: 1px dashed red; */
+
+/* ================= FOOTER STYLES (UNCHANGED) ================= */
+.game-footer {
+  width: 100%;
+  background: rgba(60, 40, 30, 0.85);
+  padding: 18px 0;
+  margin-top: auto; /* Ensures footer stays at bottom */
+  display: flex;
+  justify-content: center;
+  font-family: El Messiri;
+  color: #f7efe2;
+  border-top: 1px solid rgba(255, 230, 180, 0.25);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+}
+
+.footer-box {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  color: #f7efe2;
+  font-size: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-item span {
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+.footer-btn {
+  padding: 10px 22px;
+  background: #caa23a;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.footer-btn:hover {
+  background: #d4af37;
+}
