@@ -1,25 +1,4 @@
-<?php
 
-$host="localhost";
-$username="root";
-$password="";
-$dbname="login";
-
-$connect_database= mysqli_connect( $host, $username, $password, $dbname  );
-
-if(mysqli_connect_errno()){
-
-  echo "not connected ";
-  exit();
-}
-else {
-
-echo "connected";
-
-}
-
-
-?>
 <!DOCTYPE html>
 <html lang="ar">
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
