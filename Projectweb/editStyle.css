@@ -1,0 +1,54 @@
+/* شكل عام للفورم */
+form {
+    background-color: #f9f9f9; /* خلفية فاتحة */
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; 
+}
+
+
+/* labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* الحقول input و select */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* زر الحفظ */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* زر الحفظ عند المرور عليه */
+form button:hover {
+    background-color: #0056b3;
+}
