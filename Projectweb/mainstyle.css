@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+
+}
+html,body {
+    height: 100%;
+} 
+.head {
+    width: 100%;
+    height: 500px;
+    background-image:linear-gradient(to left,rgba(0,0,0,0.3)), url(images/92b2ab42e186c5398c3ccdeea0ecafc9134b12ba.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+nav {
+    direction: ltr;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+    color: #F9E79F;
+    background: linear-gradient(to right,rgba(63, 40, 25, 0.5));
+
+}
+nav .links {
+    list-style: none;
+    display:flex;
+    gap: 20px;
+     
+}
+nav .links li a{
+    color: #F9E79F;
+    text-decoration: none;
+}
+nav .links li a:hover{
+    text-decoration: underline;
+}
+.aref-ruqaa-regular {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-bold {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.logo{
+    font-family:"Aref Ruqaa";
+    font-weight: 50;
+    font-style:bold;
+    font-size: 16px;
+    
+}
+
+section {
+    text-align: center;
+}
+.cairo{
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+    
+    
+}
+
+pre {
+   /* margin-right: 100px; */
+    color: rgba(255, 255, 255, 1);
+     margin: 0;
+    padding: 0;
+   font-size: 25px;
+}
+
+
+button {
+    background-color: rgba(184, 134, 11, 1);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+   transition: 0.2s ease;
+    font-size: 20px; 
+}
+button:hover{
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: rgba(63, 40, 25, 1);
+  padding: 40px 0;
+  color: #f0e6d2;
+  font-family: Arial, sans-serif;
+  direction: ltr;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-section ul {
+  list-style: disc;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.contact-section a {
+  color: white;       
+  text-decoration: none;
+}
+
+.email-section {
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.logo-ar {
+  font-family: 'Amiri', serif;
+  font-size: 48px;
+  color: #f8e4a8;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #e3d2bd;
+}
+
+.back_playing {
+    background-image: url("../images/Egypt_\ A\ Land\ Where\ Civilization\ Was\ Born.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 600px;      /* تقدري تغيريها */
+    position: relative;
+    border-radius: 10px;
+}
+
+.top-img {
+    position: absolute;
+    width: 550px;
+    bottom: 60px;
+    
+    border-radius: 20px;
+}
+
+.text-over {
+  z-index: 10;
+    position:absolute;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-left: 60px;
+    top: 250px;
+    font-weight: bold;
+    text-shadow: 0 0 12px black;
+}
+letters-box {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 200px; /* ممكن تزودي أو تقللي */
+    background: rgba(60, 40, 30, 0.85);
+    padding: 15px;
+    border-radius: 18px;
+    color: #f7efe2; /* لون الكتابة */
+    font-family: "Amiri" , serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.letters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+}
+
+.letters-grid .col div {
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
