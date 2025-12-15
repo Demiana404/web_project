@@ -29,13 +29,11 @@
 
         
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="test.html"> تواصل معنا </a></li>
-          <li class="nav-item"><a class="nav-link" href="">ابدأ اللعب </a></li>
-          <li class="nav-item"><a class="nav-link" href="#">عن اللعبة</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-links"> تواصل معنا </a></li>
           <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
         </ul>
-        <a class="btn login-btn me-2" href="landing2.html">تسجيل الدخول</a>
-        <a class="btn signup-btn me-4" href="#">إنشاء حساب</a>
+        <a class="btn login-btn me-2" href="login.php">تسجيل الدخول</a>
+        <a class="btn signup-btn me-4" href="signup.php">إنشاء حساب</a>
       </div>
 
     </div>
@@ -52,7 +50,7 @@
 </section>
 
 <footer class="footer">
-  <div class="footer-container">
+  <div  id="contact-links" class="footer-container">
     
     <div class="contact-section">
       <h3>Contact Us:</h3>

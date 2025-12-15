@@ -29,10 +29,10 @@
 
         
         <ul class="navbar-nav mb-2 mb-lg-0">
-             <li class="nav-item"><a class="nav-link" href="langing1.html"> تسجيل الخروج </a></li>
-          <li class="nav-item"><a class="nav-link" href="#"> تواصل معنا </a></li>
-          <li class="nav-item"><a class="nav-link" href="">ابدأ اللعب </a></li>
-          <li class="nav-item"><a class="nav-link" href="#">عن اللعبة</a></li>
+             <li class="nav-item"><a class="nav-link" href="index.php"> تسجيل الخروج </a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-links"> تواصل معنا </a></li>
+          <li class="nav-item"><a class="nav-link" href="main.php">ابدأ اللعب </a></li>
+          <li class="nav-item"><a class="nav-link" href="AboutGame.php">عن اللعبة</a></li>
           <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
         </ul>
       </div>
@@ -51,7 +51,7 @@
 </section>
 
 <footer class="footer">
-  <div class="footer-container">
+  <div id="contact-links" class="footer-container">
     
     
     <div class="contact-section">
