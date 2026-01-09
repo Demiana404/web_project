@@ -1,0 +1,193 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "El Messiri", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Background Image Handling */
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures BG covers screen, character stays positioned */
+  object-position: center center;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* ================= NAVBAR STYLES (UNCHANGED) ================= */
+.custom-navbar {
+  padding: 5px 10px;
+  direction: rtl;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100; /* Ensure nav is on top */
+}
+
+.navbar {
+  direction: ltr;
+}
+
+.logo {
+  font-family: Aref Ruqaa;
+  font-size: 30px;
+  color: #d4af37 !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 15px;
+  margin-left: 18px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d4af37 !important;
+}
+.game-footer {
+  width: 100%;
+  background: rgba(60, 40, 30, 0.85);
+  padding: 18px 0;
+  margin-top: auto; /* Ensures footer stays at bottom */
+  display: flex;
+  justify-content: center;
+  font-family: El Messiri;
+  color: #f7efe2;
+  border-top: 1px solid rgba(255, 230, 180, 0.25);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+}
+.info-image img {
+  width: 250px;              /* يمكنك تغيير الحجم */
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+.main-game-container {
+  display: flex;
+  flex-direction: row;       /* اجعل العناصر بجانب بعض */
+  justify-content: center;  
+  align-items: center;
+  gap: 100px;                 /* مسافة بين الصورة والنص */
+  margin-top: 100px;
+  padding: 20px;
+            
+}
+.input-area h5{
+    font-family: "Aref Ruqaa",serif;
+}
+.input-area {
+  margin: 0;                 /* إزالة المسافة القديمة */
+  max-width: 600px;
+  text-align: right; 
+  
+}
+.input-area h2{
+    color: white;
+}
+.input-area .info{
+    font-size: 20px;
+    color: black;
+    font-family: "EL Messiri",sans-serif;
+    text-align: right;
+    font-weight: bold;
+}
+.input-area p {
+  font-size: 40px;
+  color: rgb(241, 214, 55);
+  font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
+  font-weight: 800;
+}
+
+.game-input {
+  width: 300px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #d4af37;
+  background: rgba(255, 248, 235, 0.95); /* Cream background */
+  font-family: "El Messiri", sans-serif;
+  font-size: 18px;
+  text-align: right;
+  outline: none;
+  color: #333;
+}
+
+.game-input::placeholder {
+  color: #887;
+}
+
+.game-submit-btn a{
+  text-decoration: none;
+  color: black;
+}
+.game-submit-btn {
+  padding: 12px 35px;
+  background: linear-gradient(45deg, #caa23a, #e6c86e); /* Gold gradient */
+  color: #2a1a10;
+  border: none;
+  border-radius: 8px;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+.game-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5);
+  background: linear-gradient(45deg, #d4af37, #fddb85);
+}
+
+/* --- RIGHT SIDE: SPACER --- */
+/* This empty container ensures the center box doesn't cover the character on the right */
+.right-spacer {
+  flex: 1;
+  max-width: 30%;
+}
+
+
+
+.footer-box {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  color: #f7efe2;
+  font-size: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-item span {
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+.footer-btn {
+  padding: 10px 22px;
+  background: #caa23a;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.footer-btn:hover {
+  background: #d4af37;
+}
